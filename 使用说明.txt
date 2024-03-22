@@ -11,3 +11,12 @@ python app.py --port=7888 --sd_webui_config="your sd_webui config path"
 启动命令
 
 python app.py --port=7888 --sd_webui_config="./config.json"
+
+
+---
+
+default_host = "127.0.0.1"  //仅限本地访问
+
+default_host = "0.0.0.0"    //运行局域网访问
+
+default_port = 8000 //默认端口

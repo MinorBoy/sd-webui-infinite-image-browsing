@@ -20,7 +20,8 @@ import json
 tag = "\033[31m[warn]\033[0m"
 
 default_port = 8000
-default_host = "127.0.0.1"
+# default_host = "127.0.0.1"
+default_host = "0.0.0.0"
 
 
 def sd_webui_paths_check(sd_webui_config: str, relative_to_config: bool):
