@@ -79,13 +79,13 @@ const oninitTauriLaunchConf = async () => {
           <a-button @click="globalStore.shortcut.download = ''" class="clear-btn">{{ $t('clear') }}</a-button>
         </div>
       </a-form-item>
-      <a-form-item :label="$t('deleteSelected')">
+      <!-- <a-form-item :label="$t('deleteSelected')">
         <div class="col">
           <a-input :value="globalStore.shortcut.delete" @keydown.stop.prevent="onShortcutKeyDown($event, 'delete')"
             :placeholder="$t('shortcutKeyDescription')" />
           <a-button @click="globalStore.shortcut.delete = ''" class="clear-btn">{{ $t('clear') }}</a-button>
         </div>
-      </a-form-item>
+      </a-form-item> -->
       <a-form-item :label="$t('toggleTagSelection', { tag: tag.name })"
         v-for="tag in globalStore.conf?.all_custom_tags ?? []" :key="tag.id">
         <div class="col">

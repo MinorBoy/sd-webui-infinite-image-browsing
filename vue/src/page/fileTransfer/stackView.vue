@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { DownOutlined, LeftCircleOutlined, RightCircleOutlined } from '@/icon'
+// import { DownOutlined, LeftCircleOutlined, RightCircleOutlined } from '@/icon'
 import { useGlobalStore } from '@/store/useGlobalStore'
 import {
   useFileTransfer,
@@ -241,10 +241,10 @@ function getGenDiff(ownGenInfo: any, idx: any, increment: any, ownFile: FileNode
         <div class="actions">
           <a class="opt" @click.prevent="refresh"> {{ $t('refresh') }} </a>
           <a-dropdown>
-            <a class="opt" @click.prevent>
+            <!-- <a class="opt" @click.prevent>
               {{ $t('search') }}
               <down-outlined />
-            </a>
+            </a> -->
             <template #overlay>
               <a-menu>
                 <a-menu-item key="tag-search">
@@ -260,10 +260,10 @@ function getGenDiff(ownGenInfo: any, idx: any, increment: any, ownFile: FileNode
           <a class="opt" @click.prevent.stop="selectAll"> {{ $t('selectAll') }} </a>
           <a class="opt" @click.prevent="share" v-if="!isTauri"> {{ $t('share') }} </a>
           <a-dropdown>
-            <a class="opt" @click.prevent>
+            <!-- <a class="opt" @click.prevent>
               {{ $t('quickMove') }}
               <down-outlined />
-            </a>
+            </a> -->
             <template #overlay>
               <a-menu>
                 <a-menu-item v-for="item in global.quickMovePaths" :key="item.dir">

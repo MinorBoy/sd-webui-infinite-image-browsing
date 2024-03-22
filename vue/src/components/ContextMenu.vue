@@ -26,7 +26,7 @@ const tags = computed(() => {
 </script>
 <template>
   <a-menu @click="emit('contextMenuClick', $event, file, idx)">
-    <a-menu-item key="deleteFiles" :disabled="disableDelete">{{ $t('deleteSelected') }}</a-menu-item>
+    <!-- <a-menu-item key="deleteFiles" :disabled="disableDelete">{{ $t('deleteSelected') }}</a-menu-item> -->
     <a-menu-item key="openWithDefaultApp" >{{ $t('openWithDefaultApp') }}</a-menu-item>
     <a-menu-item key="saveSelectedAsJson" >{{ $t('saveSelectedAsJson') }}</a-menu-item>
     <template v-if="file.type === 'dir'">

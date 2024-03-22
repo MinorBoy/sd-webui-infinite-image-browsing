@@ -105,13 +105,13 @@ const restoreRecord = () => {
       </div>
       <div flex-placeholder />
 
-      <a href="https://github.com/zanllp/sd-webui-infinite-image-browsing" target="_blank" class="last-record">Github</a>
+      <!-- <a href="https://github.com/zanllp/sd-webui-infinite-image-browsing" target="_blank" class="last-record">Github</a>
       <a href="https://github.com/zanllp/sd-webui-infinite-image-browsing/blob/main/.env.example" target="_blank"
         class="last-record">{{ $t('privacyAndSecurity') }}</a>
       <a href="https://github.com/zanllp/sd-webui-infinite-image-browsing/wiki/Change-log" target="_blank"
         class="last-record">{{ $t('changlog') }}</a>
       <a href="https://github.com/zanllp/sd-webui-infinite-image-browsing/issues/90" target="_blank"
-        class="last-record">{{ $t('faq') }}</a>
+        class="last-record">{{ $t('faq') }}</a> -->
         <a-radio-group v-model:value="global.darkModeControl" button-style="solid">
         <a-radio-button value="light">light</a-radio-button>
         <a-radio-button value="auto">auto</a-radio-button>
@@ -164,7 +164,7 @@ const restoreRecord = () => {
           </actionContextMenu>
         </ul>
       </div>
-      <div class="feature-item" v-if="global.quickMovePaths.length">
+      <!-- <div class="feature-item" v-if="global.quickMovePaths.length">
         <h2>{{ $t('launchFromQuickMove') }}</h2>
         <ul>
           <li @click="addToExtraPath('scanned')" class="item" style="text-align: ;">
@@ -182,14 +182,14 @@ const restoreRecord = () => {
             </li>
           </actionContextMenu>
         </ul>
-      </div>
+      </div> -->
       <div class="feature-item">
         <h2>{{ $t('launch') }}</h2>
         <ul>
-          <li v-for="comp in Object.keys(compCnMap) as TabPane['type'][]" :key="comp" class="item"
+          <!-- <li v-for="comp in Object.keys(compCnMap) as TabPane['type'][]" :key="comp" class="item"
             @click.prevent="openInCurrentTab(comp)">
             <span class="text line-clamp-1">{{ compCnMap[comp] }}</span>
-          </li>
+          </li> -->
           <li class="item" @click="imgsli.opened = true">
             <span class="text line-clamp-1">{{ $t('imgCompare') }}</span>
           </li>
@@ -197,7 +197,7 @@ const restoreRecord = () => {
             <span class="text line-clamp-1">{{ $t('openInNewWindow') }}</span>
           </li>
           <li class="item" v-if="lastRecord?.tabs.length" @click="restoreRecord">
-            <span class="text line-clamp-1">{{ $t('restoreLastRecord') }}</span>
+            <!-- <span class="text line-clamp-1">{{ $t('restoreLastRecord') }}</span> -->
           </li>
         </ul>
       </div>
