@@ -1,3 +1,13 @@
+---
+本地运行环境搭建
+
+git clone https://github.com/zanllp/sd-webui-infinite-image-browsing.git
+cd sd-webui-infinite-image-browsing
+pip install -r requirements.txt
+python app.py --port=7888 --sd_webui_config="your sd_webui config path"
+
+---
+
 启动命令
 
 python app.py --port=7888 --sd_webui_config="./config.json"
